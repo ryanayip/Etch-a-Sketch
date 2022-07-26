@@ -7,6 +7,9 @@ function makeRows(rows, cols) {
     let cell = document.createElement("div");
     //cell.style.backgroundColor = "white";
     cell.addEventListener("mouseover", changeColor);
+    cell.addEventListener("touchstart", changeColor);
+    cell.addEventListener("touchmove", changeColor);
+
     cell.style.backgroundColor = "white"
     container.appendChild(cell).className = "gridItem";
     
